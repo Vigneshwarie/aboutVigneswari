@@ -2,6 +2,20 @@ body{
     background-color: #cae9ff;
     padding: 0;
     margin: 0;
+    font-family: 'Roboto Slab', Cambria, Cochin, Georgia, Times, 'Times New Roman', Arial, sans-serif;
+    line-height: 1.5;
+    color:#1b263b;
+}
+
+h1 {
+    display: inline-block;
+    font-size: 38px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h1:hover {
+    color: #ffffff !important;
 }
 
 a {
@@ -10,69 +24,56 @@ a {
     padding: 20px 5px;
 }
 
+a:hover {
+    color: #ffffff !important;
+}
+
 img {
     height: 15px;
     width: 15px;
     padding-right: 1px;
 }
 
-a:hover{
-    color: #ffffff !important;
-    text-decoration: none;
-    padding: 20px 5px;
-}
-
-.bodyHeader {
+header {
+    display: flex;
+    flex-direction: row;
     padding: 10px;
-    font-family: 'Roboto Slab',Cambria, Cochin, Georgia, Times, 'Times New Roman', Arial, sans-serif;
-    background-color: #5fa8d3;
-    color: #1b4965;
     margin: 0;
     height: 60px;
+    background-color: #5fa8d3;
+    color: #1b4965;
+    justify-content: space-between;
+    align-items: center;
     box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
 }
 
-.bodyHeader h1 {
-    display: inline-block;
-    font-size: 38px;
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-.bodyHeader h1:hover{
-    color: #ffffff !important;
-}
-
-.bodyHeader nav {
-    float: right;
-    font-family: 'Roboto Slab', Cambria, Cochin, Georgia, Times, 'Times New Roman', Arial, sans-serif; 
-    font-size: 15px;
+nav {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
 }
 
-.bodyHeader nav ul {
+nav ul {
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
     justify-content:space-around;
 }
 
-.bodyHeader nav ul li {
+nav ul li {
     display: inline-block;
     margin-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
-.bodyHeader nav ul li:hover{
+nav ul li:hover{
     /* property name | duration | easing function | delay */
     transition: background 0.04ms ease-in-out .02ms ;
     background: #1b4965;
     box-shadow: 0px 4px 4px 0px #cae9ff;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    background-position: center;
 }
 
 @media screen and (max-width: 545px) {
@@ -85,5 +86,9 @@ a:hover{
     }
 }
 
+.section-about-me{
+    height: 20%;
+    
+}
 
 
