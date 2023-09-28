@@ -14,6 +14,16 @@ h1 {
     margin-bottom: 0;
 }
 
+h2 {
+    margin: 0;
+    font-size: 28px;
+}
+
+p{
+    margin:0;
+    font-size:14px;
+}
+
 h1:hover {
     color: #ffffff !important;
 }
@@ -45,6 +55,7 @@ header {
     justify-content: space-between;
     align-items: center;
     box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+    order:1;
 }
 
 nav {
@@ -58,6 +69,7 @@ nav ul {
     display: flex;
     flex-wrap: wrap;
     justify-content:space-around;
+    order:2;
 }
 
 nav ul li {
@@ -76,19 +88,83 @@ nav ul li:hover{
     border-top-left-radius: 5px;
 }
 
-@media screen and (max-width: 545px) {
-    header,
-    main, footer {
-        flex-direction: column;
-    }
-    section {
-        padding-right: 0;
-    }
+main{
+    margin: 10px;
+    display: flex;
 }
 
-.section-about-me{
-    height: 20%;
-    
+section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.section-main-container{
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    align-items:center;
+    justify-content: space-between;
+}
+
+.banner{
+    background-image: url("../images/banner.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: soft-light;
+    min-height: 30vh;
+    padding: 2% 6%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: right;
+}
+
+aside{
+    max-width: 30%;
+    display: inline-block;
+    margin: 25px 0;
+}
+
+.content-section{
+    max-width: 70%;
+    display: inline-block;
+    margin: 5px 0;
+    align-items:stretch;
+    order:4;
+}
+
+@media screen and (max-width: 545px) {
+    header,
+    main,
+    section,
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    a {
+        color:#ffffff;
+    }
+
+    h2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    aside {
+        max-width: 100%;
+        align-self: start;
+        padding: 0;
+    }
+
+    section{
+        max-width: 100%;
+        align-self: start;
+        margin-left: 2px;
+        padding: 0;
+        text-align:left;
+    }
 }
 
 
