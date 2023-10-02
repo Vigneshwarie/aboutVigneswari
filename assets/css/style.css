@@ -1,7 +1,9 @@
 /*
 I'm so sorry for the delayed submission. 
-I added one by one blocks to the HTML and made them as flex. So, it created problem when I added more content. My header and menu was working fine on mobile version. However, after adding a banner image, the alignment is giving issues.
-For menus, I gave my own style.  Working with CSS is always challenging for me. Little more practice will help me over the time.
+ I added one-by-one blocks to the HTML and made them as flex. So,
+it created problems when I added more content. My header and menu were working fine on the mobile version. However, after adding a banner image, the alignment is giving issues. Later,
+I realized that creating one main flex container and adding items would be easier. For menus,
+I gave my style. Working with CSS is always challenging for me. A little more practice will help me over time.
 */
 
 

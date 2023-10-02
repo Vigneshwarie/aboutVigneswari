@@ -18,7 +18,7 @@ The resource can be accessed from the link, https://github.com/Vigneshwarie/abou
 
 ## Credits
 
-N/A
+The banner image is a free version downloaded from the website https: //www.vecteezy.com/free-vector/banner
 
 ## License
 
