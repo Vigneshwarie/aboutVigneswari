@@ -27,13 +27,13 @@ h1:hover {
     color: #ffffff !important;
 }
 
-a {
+nav ul li a {
     color: #1b4965;
     text-decoration: none;
     padding: 20px 5px;
 }
 
-a:hover {
+nav ul li a:hover {
     color: #ffffff !important;
 }
 
@@ -137,9 +137,15 @@ aside{
 .content-section address {
     display: flex;
     flex-wrap: wrap;
-    justify-content:space-evenly;
+    justify-content:space-between;
     align-items: center;
-    height: 100%;
+}
+
+.content-section address a{
+    justify-content: space-between;
+    padding:40px;
+    text-align: left;
+
 }
 
 @media screen and (max-width: 980px) {
@@ -150,10 +156,6 @@ aside{
         align-items: center;
         justify-content: center;
         flex-direction: column;
-    }
-
-    a {
-        color: #ffffff;
     }
 
     h2 {
@@ -179,8 +181,6 @@ aside{
 
 
 @media screen and (max-width: 768px) {
-
-
     a {
         color:#ffffff;
     }
