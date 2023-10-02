@@ -1,10 +1,23 @@
+/*
+I'm so sorry for the delayed submission. 
+I added one by one blocks to the HTML and made them as flex. So, it created problem when I added more content. My header and menu was working fine on mobile version. However, after adding a banner image, the alignment is giving issues.
+For menus, I gave my own style.  Working with CSS is always challenging for me. Little more practice will help me over the time.
+*/
+
+
+:root {
+    --darkblue: #1b4965;
+    --bodybg: #cae9ff;
+    --headerbg: #5fa8d3;
+}
+
 body {
-    background-color: #cae9ff;
+    background-color: var(--bodybg);
     padding: 0;
     margin: 0;
-    font-family: 'Roboto Slab', Cambria, Cochin, Georgia, Times, 'Times New Roman', Arial, sans-serif;
+    font-family: sans-serif, 'Roboto Slab', Cambria, Cochin, Georgia, Times, 'Times New Roman', Arial;
     line-height: 1.5;
-    color:#1b263b;
+    color: var(--darkblue);
 }
 
 h1 {
@@ -15,12 +28,20 @@ h1 {
 
 h2 {
     margin: 0;
-    font-size: 28px;
+    font-size: 24px;
+}
+
+h3{
+    font-size: 20px;
+}
+
+header, h1, h2, h3{
+    font-family: 'Roboto Slab', Cambria, Cochin, Georgia, Times, 'Times New Roman', Arial, sans-serif;
 }
 
 p{
     margin:0;
-    font-size:14px;
+    font-size:16px;
 }
 
 h1:hover {
@@ -28,7 +49,7 @@ h1:hover {
 }
 
 nav ul li a {
-    color: #1b4965;
+    color: var(--darkblue);
     text-decoration: none;
     padding: 20px 5px;
 }
@@ -49,12 +70,11 @@ header {
     padding: 10px;
     flex-wrap: wrap;
     height: 60px;
-    background-color: #5fa8d3;
-    color: #1b4965;
+    background-color: var(--headerbg);
+    color: var(--darkblue);
     justify-content: space-between;
     align-items: center;
     box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
-    order:1;
 }
 
 nav {
@@ -68,7 +88,6 @@ nav ul {
     display: flex;
     flex-wrap: wrap;
     justify-content:space-around;
-    order:2;
 }
 
 nav ul li {
@@ -80,8 +99,8 @@ nav ul li {
 nav ul li:hover{
     /* property name | duration | easing function | delay */
     transition: background 0.04ms ease-in-out .02ms ;
-    background: #1b4965;
-    box-shadow: 0px 4px 4px 0px #cae9ff;
+    background: var(--darkblue);
+    box-shadow: 0px 4px 4px 0px var(--bodybg);
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
 }
@@ -90,7 +109,6 @@ main{
     margin-top: 15px;
     margin-bottom: 40;
 }
-
 
 .main-container{
     max-width: 80%;
@@ -104,10 +122,10 @@ main{
     flex-wrap: wrap;
     align-items: stretch;
     justify-content: space-between;
-
 }
 
 .banner{
+    /* Downloaded the banner image (free) from the website https: //www.vecteezy.com/free-vector/banner */
     background-image: url("../images/banner.jpeg");
     background-size: cover;
     background-position: center;
@@ -131,7 +149,6 @@ aside{
     display: inline-block;
     margin: 5px 0;
     align-items:stretch;
-    order:4;
 }
 
 .content-section address {
@@ -143,9 +160,8 @@ aside{
 
 .content-section address a{
     justify-content: space-between;
-    padding:40px;
+    padding:35px;
     text-align: left;
-
 }
 
 @media screen and (max-width: 980px) {
@@ -179,49 +195,16 @@ aside{
     } 
 }
 
-
 @media screen and (max-width: 768px) {
-    a {
-        color:#ffffff;
-    }
-
-}
-
-/*
-@media screen and (max-width: 980px) {
-    header,
-    main,
-    section,
-    footer {
-        align-items: center;
-        justify-content: center;
-        flex-direction: row;
-    }
-
-    a {
-        color: #ffffff;
-    }
-
-    h2 {
-        align-items: center;
-        justify-content: center;
-        flex-direction: row;
-    }
-
-    aside {
-        max-width: 100%;
-        align-self: start;
-        padding: 0;
-    }
-
-    section {
-        max-width: 100%;
-        align-self: start;
-        margin-left: 2px;
+    .content-section address a {
+        justify-content:flex-start;
+        flex-direction: column;
         padding: 0;
         text-align: left;
-        flex-direction: row;
     }
 }
-*/
+
+footer{
+    text-align: center;
+}
 
