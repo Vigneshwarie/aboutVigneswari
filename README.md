@@ -10,11 +10,14 @@ N/A
 
 ## Usage
 
-To use this webpage, click the HTML page, which will open in the browser. The view the code, open the webpage in an HTML editor. When opened in a browser, the HTML page is viewed as below.
+To access the webpage, use the given link  https://vigneshwarie.github.io/aboutVigneswari/
+
+The application source code can be accessed using the link https://github.com/Vigneshwarie/aboutVigneswari
+
+The code can be downloaded from the above link. To use this webpage, click the HTML page, which will open in the browser. The view the code, open the webpage in an HTML editor. When opened in a browser, the HTML page is viewed as below.
 
 ![Alt text](assets/images/Portfolio.png)
 
-The resource can be accessed from the link, https://github.com/Vigneshwarie/aboutVigneswari
 
 ## Credits
 
